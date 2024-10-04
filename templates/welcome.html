@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .welcome {
+            text-align: center;
+            box-shadow: 10%;
+            border: 1px solid black;
+            background-color: white;
+            margin: 0px 48% 0px 25%;
+            padding-bottom: 1%;
+            border-radius: 5%;
+            margin-top: 11%;
+        }
+
+        body {
+            background-image: url("https://image.slidesdocs.com/responsive-images/background/atm-machine-on-blue-wall-with-empty-space-for-custom-content-3d-render-powerpoint-background_f699815436__960_540.jpg");
+            background-size: 120%;
+            background-repeat: no-repeat;
+        }
+
+        .p {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="welcome">
+        <h1>WELCOME</h1>
+        <a href="{{url_for('login')}}"><button>Login</button></a>
+        <a href="{{url_for('create')}}"><button>Create</button></a>
+        <p>
+        <h3>ABOUT US</h3>Hello, Heartly Welcome to our page.Kindly request you to click what you need in our page.If you
+        have already an account please login.Incase,you don't have any account create an account with proper details.
+        </p>
+    </div>
+</body>
+
+</html>

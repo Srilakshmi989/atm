@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("https://i.pinimg.com/originals/5b/ad/f7/5badf72a895a0a9d6ff371ef364d56af.gif");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin-left: 35%;
+            text-align:right;
+        }
+        .debit{
+            text-align: center;
+            box-shadow: 10%;
+            border: 1px solid black;
+            background-color:white;
+            margin: 0px 25% 0px 35%;
+            padding-bottom: 1%;
+            margin-top: 4%;
+            border-radius: 2%;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+    <div class="debit">
+        <p>
+            <h1 style="text-align: center; color: black;">Hello,please enter the amount you need</h1>
+            <input required type="text" name="amn" placeholder="Enter Amount" style="border-radius: 5px;">
+            <button style="border-radius: 9px;">Debit</button>
+        </p>
+    </div>
+    </form>
+    <a href="{{url_for('panel',account_no=an,pin_no=pn)}}"><button>Back</button></a>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Login {
+            text-align: center;
+            box-shadow: 10%;
+            border: 1px solid black;
+            background-color: white;
+            margin: 0px 30% 0px 30%;
+            padding-bottom: 1%;
+            margin-top: 10%;
+            border-radius: 20px;
+        }
+
+        body {
+            background-image: url("https://img.freepik.com/premium-vector/atm-cash-withdrawal-line-connection-low-poly-wireframe-design-abstract-geometric-background_42421-1318.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            padding-top: 2%;
+            margin-left: 15px;
+            margin-right: 40%;
+            margin-top: 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post">
+        <div class="Login">
+            <h1>Hello, Login with proper details</h1>
+            <p>
+                <input required type="text" name="acn" placeholder="Enter Account Number" style="border-radius: 5px;">
+            </p>
+            <p>
+                <input required type="text" name="pin" placeholder="Enter PIN Number" style=" border-radius: 5px;">
+            </p>
+            <a href="panel.html"><button style="border-radius: 20px;">Login</button></a>
+        </div>
+    </form>
+    <br>
+    <a href="{{url_for('welcome',account_no=an,pin_no=pn)}}"><button>Back</button></a>
+</body>
+
+</html>

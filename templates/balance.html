@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://www.shutterstock.com/image-photo/stack-bank-cards-600nw-228890224.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            text-align: center;
+        }
+
+        .Balance {
+            text-align: center;
+            box-shadow: 10%;
+            border: 1px solid black;
+            background-color: white;
+            margin: 0px 40% 0px 40%;
+            padding-bottom: 1%;
+            margin-top: 4%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Balance">
+        <p>
+        <h1 style="text-align: center; color: black;"> Your Total Balance</h1>
+        <h2>{{balance}}</h2>
+        </p>
+    </div>
+    <a href="{{url_for('panel',account_no=an,pin_no=pn)}}"><button>Back</button></a>
+</body>
+
+</html>

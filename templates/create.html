@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Create {
+            text-align:center;
+            box-shadow: 10%;
+            border: 1px solid black;
+            background-color: white;
+            margin: 0px 10% 0px 40%;
+            padding-bottom: 1%;
+            margin-top: 10%;
+            border-radius: 10px;
+        }
+
+        body {
+            background-image: url("https://media.istockphoto.com/id/1388657825/vector/futuristic-glowing-credit-card-on-a-blue-background-hologram-stock-vector.jpg?s=612x612&w=0&k=20&c=Z4wyUo6Oyggnk2aJ-PDcqgijQVT7LEv_5rXACdrkTcw=");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            padding-top: 2%;
+            margin: 0px 48% 0px 15%;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" class="Create">
+        <h1 style="text-align: center;">Enter your Details</h1>
+        <p>
+            <input required type="text" name="accno" placeholder="Create an Account Number">
+        </p>
+        <p>
+            <input required type="text" name="pinno" placeholder="Create a valid PIN Number">
+        </p>
+        <button style="margin-bottom: 1%;">Submit</button> or
+        <a href="logindetails.html" style="text-decoration: none;">Login in</a>
+    </form>
+    <br>
+    <center>
+    <a href="{{url_for('welcome',account_no=an,pin_no=pn)}}"><button>Back</button></a>
+    </center>
+</body>
+
+</html>
